@@ -3,14 +3,12 @@
 class CriarHtaccess
 {
     private $local;
-    private $rewrite;
     private $ssl;
     private $url;
 
-    public function __construct($ativarReescritaEHtaccess = 0, $ativarSsl = 0, $urlAmigavelVarURL = 0)
+    public function __construct($ativarSsl = 0, $urlAmigavelVarURL = 0)
     {
         $this->local = $_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'];
-        $this->rewrite = $ativarReescritaEHtaccess;
         $this->ssl = $ativarSsl;
         $this->url = $urlAmigavelVarURL;
 
