@@ -1,5 +1,7 @@
 <?php
-
+/*
+* Teste a Classe
+*/
 require("CriarHtaccess.php");
 
 $a = new CriarHtaccess( 1,1,1);
